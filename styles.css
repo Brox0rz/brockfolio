@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Raleway', sans-serif; 
     line-height: 1.6;
     color: #333; /* General text color for readability */
     background: #fff; /* Background color of the body */
@@ -24,6 +24,7 @@ body {
 
 /* Header and Footer with Primary color */
 header, footer {
+    font-family: 'Roboto Slab', serif;
     background-color: #A3DB7D;
     color: #fff; /* This is to ensure text is readable on the primary color */
     padding: 1rem;
