@@ -38,6 +38,18 @@ function createFooter() {
     return footer;
 }
 
+function highlightCurrentPage() {
+    const navLinks = document.querySelectorAll('nav a'); // Select all nav links
+    const currentPage = window.location.pathname.split('/').pop(); // Get the file name of the current page
+
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.style.backgroundColor = // Apply contrasting color
+            link.style.color = '#fff'; Change text color for better visibility
+        }
+    });
+}
+
 function loadContainer() {
     const header = createHeader();
     const footer = createFooter();
