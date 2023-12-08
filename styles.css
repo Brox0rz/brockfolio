@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333; /* General text color for readability */
     background: #fff; /* Background color of the body */
@@ -24,7 +24,6 @@ body {
 
 /* Header and Footer with Primary color */
 header, footer {
-    font-family: 'Roboto Slab', serif;
     background-color: #A3DB7D;
     color: #fff; /* This is to ensure text is readable on the primary color */
     padding: 1rem;
@@ -98,8 +97,12 @@ footer a:hover {
 }
 
 /* Styling for headers and titles */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     color: #4D5C43; /* Darker text for headers for contrast and emphasis */
+}
+
+h3 {
+    color: #DBD57D;
 }
 
 main {
@@ -124,6 +127,7 @@ main {
 
 #music-section {
     background-image: url('images/lovely-brock-guitar-river-pic.jpg');
+    color: #DBD57D;
 }
 
 #web-dev-section, #music-section {
