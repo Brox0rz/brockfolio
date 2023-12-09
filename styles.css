@@ -111,7 +111,7 @@ main {
 }
 
 #hero {
-    background-image: url('images/lab-brock-cropped.jpg');
+    background-image: url('Images/lab-brock-cropped.jpg');
     background-position: center; /* centers the image in the section */
     background-repeat: no-repeat; /* Stops the image from tiling */
     width: 100%;
@@ -122,11 +122,11 @@ main {
 }
 
 #web-dev-section {
-    background-image: url('images/smokey-brock.jpg');
+    background-image: url('Images/smokey-brock.jpg');
 }
 
 #music-section {
-    background-image: url('images/lovely-brock-guitar-river-pic.jpg');
+    background-image: url('Images/lovely-brock-guitar-river-pic.jpg');
     color: #DBD57D;
 }
 
