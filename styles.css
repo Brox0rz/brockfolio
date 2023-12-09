@@ -23,6 +23,10 @@ body {
 }
 
 /* Nav section */
+
+header {
+    position: relative; /*  position the element relative to its normal position in the document flow */
+}
 header, footer {
     background-color: #A3DB7D;
     color: #fff; /* This is to ensure text is readable on the primary color */
