@@ -7,6 +7,9 @@
 ;===========================================
 */
 
+// Call this function when the document is fully loaded
+document.addEventListener('DOMContentLoaded', loadContainer);
+
 function createHeader() {
   const header = document.createElement('header');
   header.innerHTML = `
@@ -36,11 +39,9 @@ function highlightCurrentPage() {
 
   navLinks.forEach(link => {
       if (link.getAttribute('href') === currentPage) {
-          link.style.backgroundColor = // Apply contrasting color
-          link.style.color = '#fff'; // Change text color for better visibility
+        link.parentElement.style.backgroundColor = '#53435C';
+          link.parentElement.style.color = '#fff';
       }
   });
 }
 
-// Call this function when the document is fully loaded
-document.addEventListener('DOMContentLoaded', loadContainer);

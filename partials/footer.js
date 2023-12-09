@@ -13,7 +13,7 @@ function createFooter() {
         <p>© ${new Date().getFullYear()} Brock Hemsouvanh. All rights reserved.</p>
         <nav aria-label="Footer quick links">
             <ul>
-                <li><a href="github.com/Brox0rz">GitHub</a></li>
+                <li><a href="https://github.com/Brox0rz">GitHub</a></li>
             </ul>
         </nav>
     `;

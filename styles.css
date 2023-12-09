@@ -22,31 +22,32 @@ body {
     background: #fff; /* Background color of the body */
 }
 
-/* Header and Footer with Primary color */
+/* Nav section */
 header, footer {
     background-color: #A3DB7D;
     color: #fff; /* This is to ensure text is readable on the primary color */
     padding: 1rem;
+    font: bold;
 }
 
-/* More specific rules for footer navigation list items */
 footer nav ul {
     padding: 0; /* Removes default padding */
     list-style-type: none; /* Removes default list item bullets */
 }
 
 footer nav li {
-    display: inline; /* Displays list items in a line */
+    display: inline-block; /* Displays list items in a line */
     margin-right: 10px; /* Keeps a margin between the items */
+    float: right;
 }
 
 nav li {
     display: inline-block;
-    margin-right: 10px;
   }
 
 /* Navigation Links */
 nav a {
+    display:block;
     color: #fff; /* Color for links in the header and footer */
     text-decoration: none; /* No underline by default */
 }
@@ -56,6 +57,15 @@ nav a:hover, button:hover, .accent-border, a:hover {
     border-color: #B97EDC; /* Accent color for borders on hover state */
     color: #B97EDC; /* Accent color for text on hover state */
     text-decoration: underline; /* Underline for links on hover */
+}
+
+footer a {
+    color: #fff; /* Ensuring readability on footer background */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #DBD57D; /* Using the light olive/gold-like color for hover state */
 }
 
 /* Warm color for error messages or important messages */
@@ -83,18 +93,11 @@ button, input[type="submit"], input[type="button"] {
 
 /*  accent color for anchor tag underlines */
 a {
-    text-decoration-color: #B97EDC; /* Accent color for underline */
+    text-decoration-color: #B97EDC;
 }
 
-/* Footer Links */
-footer a {
-    color: #fff; /* Ensuring readability on footer background */
-}
 
-footer a:hover {
-    text-decoration: underline;
-    color: #DBD57D; /* Using the light olive/gold-like color for hover state */
-}
+
 
 /* Styling for headers and titles */
 h1, h2, h4, h5, h6 {
@@ -173,109 +176,3 @@ main {
     }
 }
 
-#about-top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; /* Space between the top and bottom sections */
-}
-
-#profile-pic {
-    flex: 3;
-    text-align: center; /* Center the image if it's not full width */
-    max-width: 25%;
-}
-
-#profile-pic img {
-    width: 100%; 
-    height: auto; /* Maintain aspect ratio */
-}
-
-#bio-text {
-    flex: 3;
-    padding-left: 20px 
-}
-
-#about-bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Creates 3 equal columns for the grid */
-    grid-template-rows: repeat(8, auto); /* Creates 8 rows that size according to content */
-    gap: 10px;
-    align-items: start; /* Aligns the content at the top of each grid cell */
-}
-
-#central-image {
-    grid-column: 2 / 3; /* Places the central image in the 2nd column */
-    grid-row: 1 / -1; /* Spans from the first to the last row */
-    place-self: center stretch; /* Centers the image horizontally and stretches vertically to fit */
-}
-
-#central-image img {
-    max-width: 100%; /* Ensures the image is not larger than its container */
-    max-height: 100%; /* Ensures the image is not taller than the total available rows */
-    object-fit: contain; /* Ensures the image maintains its aspect ratio */
-}
-
-/* Styles for the text items surrounding the central image */
-.text-item {
-    color: #333;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#bucket-list-1 { grid-row: 1; grid-column: 1; }
-#bucket-list-2 { grid-row: 2; grid-column: 1; }
-#bucket-list-3 { grid-row: 3; grid-column: 1; }
-#bucket-list-4 { grid-row: 4; grid-column: 1; }
-
-/* Second row of bucket list items */
-#bucket-list-5 { grid-row: 1; grid-column: 3; }
-#bucket-list-6 { grid-row: 2; grid-column: 3; }
-#bucket-list-7 { grid-row: 3; grid-column: 3; }
-#bucket-list-8 { grid-row: 4; grid-column: 3; }
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    #about-top {
-        flex-direction: column;
-    }
-    #profile-pic, #bio-text {
-        flex-basis: 100%;
-    }
-    #about-bottom {
-        grid-template-columns: 1fr; /* Stack items on smaller screens */
-    }
-    #central-image {
-        grid-column: 1;
-    }
-}
-
-/* Achievements and Employment Sections */
-#achievements, #employment {
-    margin: 20px 0; /* Add top and bottom margin for spacing */
-}
-
-.achievement, .employment {
-    background: #f9f9f9; /* Light background for each entry */
-    border: 1px solid #e0e0e0; /* Border for definition */
-    padding: 15px; /* Inner spacing */
-    margin-bottom: 10px; /* Space between entries */
-    border-radius: 5px; /* Slightly rounded corners for aesthetics */
-}
-
-.achievement h2, .employment h2 {
-    color: #2c3e50; /* Dark color for titles for contrast */
-}
-
-.achievement p, .employment p {
-    color: #333; /* Color for readability */
-    font-size: 1rem;
-}
-
-/* Responsive design adjustments */
-@media screen and (max-width: 768px) {
-    .achievement, .employment {
-        margin: 10px; /* Adjust margins for smaller screens */
-    }
-}
