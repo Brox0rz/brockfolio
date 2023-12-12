@@ -34,6 +34,10 @@ header, footer {
     font: bold;
 }
 
+footer nav {
+    float: right;
+}
+
 footer nav ul {
     padding: 0; /* Removes default padding */
     list-style-type: none; /* Removes default list item bullets */
@@ -42,7 +46,6 @@ footer nav ul {
 footer nav li {
     display: inline-block; /* Displays list items in a line */
     margin-right: 10px; /* Keeps a margin between the items */
-    float: right;
 }
 
 nav li {
@@ -61,6 +64,16 @@ nav a:hover, button:hover, .accent-border, a:hover {
     border-color: #B97EDC; /* Accent color for borders on hover state */
     color: #B97EDC; /* Accent color for text on hover state */
     text-decoration: underline; /* Underline for links on hover */
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    display: inline-block;
 }
 
 footer a {
@@ -101,8 +114,6 @@ a {
 }
 
 
-
-
 /* Styling for headers and titles */
 h1, h2, h4, h5, h6 {
     color: #4D5C43; /* Darker text for headers for contrast and emphasis */
@@ -115,6 +126,7 @@ h3 {
 main {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 85px;
 }
 
 #hero {
