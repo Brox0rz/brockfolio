@@ -15,54 +15,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Brockfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cards.css">
 </head>
 <body>
     <script src="partials/header.js"></script>
     <main>
         <section id="project-intro">
-            <img src="images/brox0rz-album-cover.png" alt="Visual Style or Logo" class="main-image">
-            <h1>Aspirational Minimalism: Wishing  my ideas could make things simpler instead of more complicated.</h1>
-            <p>Projects will be updated soon...</p>
+            <img src="images/angel-silla.jpg" alt="Angel the Tuxedo Cat is my project manager." class="main-image">
+            <h1>Aspirational Minimalism: Wishing  my ideas could make life simpler and easier.</h1>
         </section>
 
-        <section id="project-selection">
-            <div class="project-tabs">
-                <button id="project-tab-1" onclick="displayProject(1)">Project 1</button>
-                <button id="project-tab-2" onclick="displayProject(2)">Project 2</button>
-                <button id="project-tab-3" onclick="displayProject(3)">Project 3</button>
+        <div class="card">
+            <div class="card-title">Bellevue University Projects</div>
+            <div id="card-container" class="card-container">
+                <a href="https://brox0rz.github.io/web-231/" class="card">
+                    <h1>Web-231</h1>
+                    <h2>Landing Page</h2>
+                    <img src="images/web-231-card-game.png" alt="Web-231 Card Game">
+                </a>
+                    <a href="https://brox0rz.github.io/web-330/" class="card">
+                        <h1>Web-330</h1>
+                        <h2>Landing Page</h2>
+                        <img src="images/brockfolio-landing.png" alt="Web-231 Card Game">
+                    </a>
             </div>
-            <div class="project-details">
-                <!-- This will be populated with JavaScript depending on what project is selected -->
-                <div class="grid" id="project-grid">
-                    <!-- Placeholder content -->
-                    <div class="grid-item">Details for Project 1</div>
-                    <div class="grid-item">Details for Project 2</div>
-                    <div class="grid-item">Details for Project 3</div>
-                </div>
-            </div>
-        </section>
-
-        <aside id="project-preview">
-            <img src="path-to-default-preview.jpg" alt="Default Project Preview" id="project-preview-image">
-            <nav class="project-links">
-                <!-- These will be populated and interact with the project tabs -->
-                <a href="#" onclick="previewProject(1)">Project 1</a>
-                <a href="#" onclick="previewProject(2)">Project 2</a>
-                <a href="#" onclick="previewProject(3)">Project 3</a>
-            </nav>
-        </aside>
+        </div>
+        
     </main>
     <script src="partials/footer.js"></script>
-
-    <script>
-        // Placeholder functions for project tab and preview functionality
-        function displayProject(projectNumber) {
-            // Logic to display the details of the selected project
-        }
-
-        function previewProject(projectNumber) {
-            // Logic to change the preview image and possibly update the main project details
-        }
-    </script>
 </body>
 </html>

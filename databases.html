@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Databases - Brockfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cards.css">
 </head>
 <body>
     <script src="partials/header.js"></script>
@@ -24,35 +25,21 @@
             <!-- You can include a subtitle or a brief description here -->
         </section>
 
-        <section id="databases-content">
-            <div class="database-column" id="database-column-1">
-                <!-- Content for column 1 will be loaded here by JavaScript -->
-                <h2>Selected Item</h2>
-                <input type="text" placeholder="Search here...">
-                <p>Item 1</p>
-                <p>Item 2</p>
-                <p>Item 3</p>
-                <p>Item 4</p>
+        <div class="card">
+            <div class="card-title">Bellevue University Projects</div>
+            <div id="card-container" class="card-container">
+                <a href="https://brox0rz.github.io/web-231/" class="card">
+                    <h1>Web-231</h1>
+                    <h2>Landing Page</h2>
+                    <img src="images/web-231-card-game.png" alt="Web-231 Card Game">
+                </a>
+                    <a href="https://brox0rz.github.io/web-330/" class="card">
+                        <h1>Web-330</h1>
+                        <h2>Landing Page</h2>
+                        <img src="images/brockfolio-landing.png" alt="Web-231 Card Game">
+                    </a>
             </div>
-            <div class="database-column" id="database-column-2">
-                <!-- Content for column 2 will be loaded here by JavaScript -->
-                <h2>Selected Item</h2>
-                <input type="text" placeholder="Search here...">
-                <p>Item 1</p>
-                <p>Item 2</p>
-                <p>Item 3</p>
-                <p>Item 4</p>
-            </div>
-            <div class="database-column" id="database-column-3">
-                <!-- Content for column 3 will be loaded here by JavaScript -->
-                <h2>Selected Item</h2>
-                <input type="text" placeholder="Search here...">
-                <p>Item 1</p>
-                <p>Item 2</p>
-                <p>Item 3</p>
-                <p>Item 4</p>
-            </div>
-        </section>
+        </div>
     </main>
     
     <script src="partials/footer.js"></script>

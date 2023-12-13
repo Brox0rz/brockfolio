@@ -10,6 +10,7 @@
 
 /* Basic Reset */
 * {
+    text-align: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +20,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333; /* General text color for readability */
-    background: #fff; /* Background color of the body */
+    background: #e6e4cb;
 }
 
 /* Nav section */
@@ -66,8 +67,10 @@ nav a:hover, button:hover, .accent-border, a:hover {
     text-decoration: underline; /* Underline for links on hover */
 }
 
+/* Footer Styles */
+
 footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -126,41 +129,42 @@ h3 {
 main {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 85px;
+    min-height: calc(100vh - 120px); /* Adjust 120px based on header and footer height */
+    display: flex;
+    flex-direction: column;
 }
 
 #hero {
-    background-image: url('Images/lab-brock-cropped.jpg');
-    background-position: center; /* centers the image in the section */
-    background-repeat: no-repeat; /* Stops the image from tiling */
+    background-image: url('images/lab-brock-cropped.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 40vh; /* Set the height of the section */
+    height: 40vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 #web-dev-section {
-    background-image: url('Images/smokey-brock.jpg');
+    background-image: url('images/smokey-brock.jpg');
 }
 
 #music-section {
-    background-image: url('Images/lovely-brock-guitar-river-pic.jpg');
+    background-image: url('images/lovely-brock-guitar-river-pic.jpg');
     color: #DBD57D;
 }
 
 #web-dev-section, #music-section {
-    display: flex; /* Use flexbox for equal sharing */
-}
-
-#web-dev-section, #music-section {
-    height: 40vh; /* Set the height of the section */
-    width: 50%; /* Set each section to take up half the width */
-    box-sizing: border-box; /* Include padding and borders in the element's total width */
-    padding: 20px; /* Adjust padding as needed */
+    height: 40vh; 
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
     background-size: cover;
     background-position: center;
-    min-height: 300px; /* Set a minimum height for each section */
+    min-height: 300px;
+    text-align: center;
+    display: flex; /* Use flexbox for equal sharing */
 }
 
 /* Responsive adjustments */
@@ -170,18 +174,6 @@ main {
     }
 }
 
-/* Database Section */
-#databases-content {
-    display: flex; /* Apply a flexbox layout */
-    justify-content: space-between; /* Space out the columns evenly */
-}
-
-.database-column {
-    width: calc(33.333% - 40px); /* Subtract the total padding from the width */
-    margin: 20px; /* Provide some space between the columns */
-}
-
-/* Responsive adjustments for smaller screens */
 @media screen and (max-width: 768px) {
     #databases-content {
         flex-direction: column; /* Stack the columns vertically */
@@ -192,3 +184,51 @@ main {
     }
 }
 
+/* Database Section */
+#databases-content {
+    display: flex; /* Apply a flexbox layout */
+    justify-content: space-between;
+}
+
+.database-column {
+    width: calc(33.333% - 40px); /* Subtract the total padding from the width */
+    margin: 20px;
+}
+
+/* Resume Styles */
+#achievements, #employment {
+    margin: 20px 0; /* Add top and bottom margin for spacing */
+  }
+  
+  .achievement, .employment {
+    background: #f9f9f9; /* Light background for each entry */
+    border: 1px solid #e0e0e0; /* Border for definition */
+    padding: 15px; /* Inner spacing */
+    margin-bottom: 10px; /* Space between entries */
+    border-radius: 5px; /* Slightly rounded corners for aesthetics */
+  }
+  
+  .achievement h2, .employment h2 {
+    color: #2c3e50; /* Dark color for titles for contrast */
+  }
+  
+  .achievement p, .employment p {
+    color: #333; /* Color for readability */
+    font-size: 1rem;
+  }
+  
+  /* Responsive design adjustments */
+  @media screen and (max-width: 768px) {
+    .achievement, .employment {
+        margin: 10px; /* Adjust margins for smaller screens */
+    }
+  }
+
+  /* Projects Styles */
+
+  #project-intro .main-image {
+    max-width: 50%; /* or any other size you prefer */
+    height: auto; /* maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* center the image */
+}
