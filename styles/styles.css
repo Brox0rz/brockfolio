@@ -243,10 +243,21 @@ main {
     z-index: 2; /* Ensures text is above the hero image */
 }
 
+.hero-projects-text {
+    display: grid;
+    grid-template-rows: repeat(6, 2fr);
+    max-height: 6vh;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
 .hero-word {
     display: inline-block;
-    cursor: pointer; /* Cursor effect for hover */
-    font-weight: bold; /* Makes the font bold */
+    cursor: pointer;
+    font-weight: bold;
     font-size: 5em;
     text-shadow: 
         -2px -2px 0 #53435C,  
@@ -257,11 +268,25 @@ main {
 
 #L1 { margin-left: 10%; }
 #L2 { margin-left: 15%; }
+#L3 { margin-left: 5%; }
+#L4 { margin-left: 10%; }
 
 #R1 { margin-right: 10%; }
 #R2 { margin-right: 30%; }
+#R3 { margin-right: 2%; margin-top: 8%; }
+#R4 { margin-right: 10%; margin-top: 4%;}
+
+#L3, #L4 {
+    font-size: 3.5em;
+}
+
+#R3, #R4 {
+    font-size: 3em;
+}
 
 #C1 { margin-right: 30% }
+
+#T1 { margin-left: 16% }
 
 .hero-word.left {
     color: #DBD57D;
@@ -275,6 +300,10 @@ main {
     color: #B97EDC;
     justify-self: center;
     margin-top: 10%;
+}
+
+.hero-word.top {
+    color: #B97EDC; 
 }
 
 .hero-word:hover {
@@ -472,7 +501,7 @@ main {
 /* Responsive Styling */
 @media screen and (max-width: 768px) {
     #project-intro .main-image {
-      max-width: 80%; /* Adjust width for smaller screens */
+      max-width: 50%; /* Adjust width for smaller screens */
       margin-bottom: 15px; /* Adjust bottom margin */
     }
   
@@ -491,6 +520,10 @@ main {
     .card-back {
       font-size: 0.8em; /* Smaller text on card-back */
     }
+
+    .card-grid-wrapper {
+        margin-top: 5%;
+    }
   }
 
   @media screen and (max-width: 480px) {
@@ -498,10 +531,6 @@ main {
       grid-template-columns: 1fr; /* 1 column for very small screens */
     }
   }
-
-  @media screen and (max-width: 768px) {
-    .card-container, .card-grid-wrapper {
-    }
 
     .card-back p {
         font-size: 0.8em; /* Reduce font size for smaller screens */
