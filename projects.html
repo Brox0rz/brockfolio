@@ -1,6 +1,6 @@
 <!-- 
 ============================================
-; Title:  index.html
+; Title:  projects.html
 ; Author: Brock Hemsouvanh
 ; Date:   26 Nov 2023
 ; Description: projects page for the brockfolio site
@@ -14,34 +14,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Brockfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,900;1,200&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <script src="partials/header.js"></script>
+    <div class="secret-hero-fx"></div>
     <main>
         <section id="project-intro">
             <img src="images/angel-silla.jpg" alt="Angel the Tuxedo Cat is my project manager." class="main-image">
-            <h1>Aspirational Minimalism: Wishing  my ideas could make life simpler and easier.</h1>
+            <h2>Aspirational Minimalism: Angel the Tuxedo Cat is my project manager.</h2>
         </section>
+        <div class="card-grid-wrapper">
+            <h1>Bellevue Course Projects</h1>
+            <div class="card-container">
+                <div class="card-link-wrapper">
+                <a href="https://brox0rz.github.io/web-231/" target="_blank"><h2>Web-231</h2></a>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <img src="images/hemsouvanh-web-231-landing.png" alt="Web-231 Course Projects">
+                        </div>
+                        <div class="card-back" id="web-231-card-back">
+                            <h2>Description</h2>
+                            <p>Learned JavaScript programming language syntax, software design, coding, documenting, and 
+                                debugging strategies. Topics included Data Types, Reference Types, Operators, Objects, Control Statements, and 
+                                Functions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-link-wrapper">
+                    <a href="https://brox0rz.github.io/web-330/" target="_blank"><h2>Web-330</h2></a>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <img src="images/hemsouvanh-web-330-landing.png" alt="Web-330 Course Projects">
+                        </div>
+                        <div class="card-back">
+                            <h2>Description</h2>
+                            <p>Used a wide range of advanced JavaScript programming strategies to build interactive programs solving real-world problems. 
+                                Topics included object-oriented programming, unit testing, asynchronous executions, files and streams, lambda expressions, and 
+                                module bundlers.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card-link-wrapper">
+                    <a href="#web-420-capstone"><h2>Web-420</h2></a>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <img src="images/tile-dye.png" alt="Web-420 Capstone Project">
+                        </div>
+                        <div class="card-back">
+                            <h2>Description</h2>
+                            <p>Description Coming Soon! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card-link-wrapper">
+                    <a href="#composer-app"><h2>Composer App</h2></a>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <img src="images/tile-dye.png" alt="Composer App">
+                        </div>
+                        <div class="card-back">
+                            <h2>Description</h2>
+                            <p>Description Coming Soon! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="card">
-            <div class="card-title">Bellevue University Projects</div>
-            <div id="card-container" class="card-container">
-                <a href="https://brox0rz.github.io/web-231/" class="card">
-                    <h1>Web-231</h1>
-                    <h2>Landing Page</h2>
-                    <img src="images/web-231-card-game.png" alt="Web-231 Card Game">
-                </a>
-                    <a href="https://brox0rz.github.io/web-330/" class="card">
-                        <h1>Web-330</h1>
-                        <h2>Landing Page</h2>
-                        <img src="images/brockfolio-landing.png" alt="Web-231 Card Game">
-                    </a>
-            </div>
-        </div>
-        
+                <div class="card-link-wrapper">
+                    <a href="#gpa-calculator"><h2>GPA Calculator</h2></a>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <img src="images/tile-dye.png" alt="GPA Calculator App">
+                        </div>
+                        <div class="card-back">
+                            <h2>Description</h2>
+                            <p>Description Coming Soon! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-link-wrapper">
+                    <a href="#in-n-out-books"><h2>In-N-Out-Books</h2></a>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <img src="images/tile-dye.png" alt="In-N-Out-Books">
+                        </div>
+                        <div class="card-back">
+                            <h2>Description</h2>
+                            <p>Description Coming Soon! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-link-wrapper">
+                    <a href="#nodebucket"><h2>Nodebucket</h2></a>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <img src="images/tile-dye.png" alt="Nodebucket">
+                        </div>
+                        <div class="card-back">
+                            <h2>Description</h2>
+                            <p>Description Coming Soon! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-link-wrapper">
+                    <a href="#computer-repair"><h2>Bob's Computer Repair</h2></a>
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="card-front">
+                            <img src="images/tile-dye.png" alt="Computer Repair Shop">
+                        </div>
+                        <div class="card-back">
+                            <h2>Description</h2>
+                            <p>Description Coming Soon! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+
     </main>
     <script src="partials/footer.js"></script>
+
+    <script>
+        function flipCard(cardElement) {
+            cardElement.classList.toggle('is-flipped');
+        }
+    </script>
 </body>
 </html>

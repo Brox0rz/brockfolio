@@ -1,0 +1,494 @@
+/*
+============================================
+; Title:  styles.css
+; Author: Brock Hemsouvanh
+; Date:   07 Dec 2023
+; Description: CSS stylesheet for brockfolio site
+;===========================================
+*/
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333; /* General text color for readability */
+    background: #e6e4cb;
+}
+
+/* Nav section */
+
+header {
+    position: relative; /*  position the element relative to its normal position in the document flow */
+    z-index:10;
+}
+
+header, footer {
+    background-color: #A3DB7D;
+    color: #4D5C43; /* Default text color */
+    padding: 1rem;
+    font-weight: bold; /* Make text bold */
+}
+
+/* Navigation Links */
+
+nav a, footer a {
+    display: block;
+    font-size: 1.1em;
+    color: #4D5C43; 
+    text-decoration: none; /* No underline by default */
+    padding: 0.5rem;
+    border: 2px solid transparent; /* Transparent border by default fixed wiggle effect on hover */
+}
+
+nav a:visited, footer a:visited {
+    color: #53435C;
+}
+
+nav a:hover, footer a:hover {
+    background-color: #B97EDC;
+    border-color: #53435C;
+}
+
+footer nav {
+    float: right;
+}
+
+footer nav ul {
+    padding: 0; /* Removes default padding */
+    list-style-type: none; /* Removes default list item bullets */
+}
+
+footer nav li {
+    display: inline-block; /* Displays list items in a line */
+    margin-right: 10px; /* Keeps a margin between the items */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0 2rem; /* Small left and right margins */
+    margin: 0;
+}
+
+nav li {
+    margin: 0 0.5rem; /* Spacing between links */
+}
+
+/* Accent color for borders and hover states */
+
+button:hover, .accent-border, a:hover {
+    border-color: #B97EDC;
+    color: #B97EDC;
+    text-decoration: underline;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    display: inline-block;
+}
+
+footer a {
+    color: #fff; /* Ensuring readability on footer background */
+}
+
+.error-message, .important, .warm-text {
+    color: #53435C; /* Warm color for text that needs to stand out */
+}
+
+.secondary-elements, .additional-background {
+    background-color: #4D5C43; /* Dark green for secondary elements */
+}
+
+.secondary-text {
+    color: #DBD57D;
+}
+
+/* Buttons and Inputs */
+
+button, input[type="submit"], input[type="button"] {
+    background-color: #A3DB7D; /* Primary color */
+    color: #fff; /* Readable text color */
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+/*  accent color for anchor tag underlines */
+a {
+    text-decoration-color: #B97EDC;
+}
+
+a h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Styling for headers and titles */
+
+h1, h2, h5, h6 {
+    color: #4D5C43; /* Darker text for headers for contrast and emphasis */
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: #DBD57D;
+}
+
+h6 {
+   font-style: italic;
+   text-decoration-line: underline;
+   font-size: larger;
+}
+
+h4 {
+   font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+}
+
+.secret-hero-fx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Places it behind the content */
+}
+
+.secret-hero-fx::before, .secret-hero-fx::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    background: url(../images/liquid-smoke-pallet.png);
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: repeat-y; /* Repeat vertically */
+}
+
+.secret-hero-fx::before {
+    left: 0;
+}
+
+.secret-hero-fx::after {
+    right: 0;
+}
+
+
+ /* landing page styles */
+
+#hero {
+    background-image: url('../images/lab-brock-cropped.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 40vh;
+}
+
+#hero::before, #hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    background: url(../images/liquid-smoke-pallet.png);
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero::before {
+    left: 0;
+}
+
+#hero::after {
+    right: 0;
+}
+
+.hero-text {
+    display: grid;
+    grid-template-rows: repeat(6, 2fr);
+    max-height: 6vh;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    z-index: 2; /* Ensures text is above the hero image */
+}
+
+.hero-word {
+    display: inline-block;
+    cursor: pointer; /* Cursor effect for hover */
+    font-weight: bold; /* Makes the font bold */
+    font-size: 5em;
+    text-shadow: 
+        -2px -2px 0 #53435C,  
+         2px -2px 0 #53435C,
+         -2px 2px 0 #53435C,
+          2px 2px 0 #53435C; /* Creates an outline effect */
+}
+
+#L1 { margin-left: 10%; }
+#L2 { margin-left: 15%; }
+
+#R1 { margin-right: 10%; }
+#R2 { margin-right: 30%; }
+
+#C1 { margin-right: 50% }
+
+.hero-word.left {
+    color: #DBD57D;
+}
+
+.hero-word.right {
+    color: #B97EDC;
+    justify-self: end;
+}
+
+.hero-word:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+
+#web-dev-section {
+    background-image: url('images/smokey-brock.jpg');
+}
+
+#music-section {
+    background-image: url('images/lovely-brock-guitar-river-pic.jpg');
+    color: #DBD57D;
+}
+
+#web-dev-section, #music-section {
+    height: 40vh; 
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    text-align: center;
+    display: flex; /* Use flexbox for equal sharing */
+}
+
+/* Responsive adjustments for medium and smaller screens */
+
+@media screen and (max-width: 768px) {
+    #web-dev-section, #music-section, 
+    #databases-content .database-column {
+        width: 100%;
+    }
+
+    /* Stack the columns vertically in the databases content */
+    #databases-content {
+        flex-direction: column;
+    }
+
+    /* Adjust margins for vertically stacked columns */
+    .database-column {
+        margin: 20px 0;
+    }
+
+    /* Decrease font size for navigation links */
+    nav a, footer a {
+        font-size: 0.9em;
+    }
+
+    /* Decrease font size for headers */
+    h1 {
+        font-size: 2em; 
+    }
+
+    h2, h5, h6 {
+        font-size: 1.3em;
+    }
+
+    /* Decrease font size for hero text */
+    .hero-word {
+        font-size: 3em; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    /* Further decrease font size for navigation links */
+    nav a, footer a {
+        font-size: 0.8em;
+    }
+
+    /* Further decrease font size for headers */
+    h1, h5, h6 {
+        font-size: 1.8em; 
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    /* Further decrease font size for hero text */
+    .hero-word {
+        font-size: 2em; 
+    }
+}
+
+
+/* Database Section */
+#databases-content {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.database-column {
+    width: calc(33.333% - 40px); /* Subtract the total padding from the width */
+    margin: 20px;
+}
+
+/* Resume Styles */
+
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.resume-section {
+    margin-bottom: 20px;
+}
+
+.experience-entry > div {
+    margin-bottom: 10px;
+}
+
+.experience-entry {
+    margin-bottom: 20px;
+}
+
+.job-employer {
+    font-weight: bold;
+    display: inline;
+}
+
+.job-date {
+    float: right;
+    font-weight: bold;
+}
+
+.skills-section, .education-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills-list, .education-list {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.skills-list li, .education-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.download-link {
+    text-align: right;
+}
+
+  /* Responsive design adjustments */
+
+  @media screen and (max-width: 768px) {
+    .achievement, .employment {
+        margin: 10px; /* Adjust margins for smaller screens */
+    }
+  }
+
+  /* Projects Styles */
+
+  .main-image {
+    max-width: 45%;
+    height: auto; /* maintain aspect ratio */
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#project-intro {
+    margin: 20px auto 20px;
+    text-align: center;
+}
+
+#project-intro .main-image {
+    border-radius: 50%;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    #project-intro .main-image {
+      max-width: 80%; /* Adjust width for smaller screens */
+      margin-bottom: 15px; /* Adjust bottom margin */
+    }
+  
+    .card-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+  
+    .card {
+      height: auto; /* Adjust card height */
+    }
+  
+    .card-link-wrapper a h2 {
+      font-size: 1.2em; /* Smaller font size for h2 */
+    }
+  
+    .card-back {
+      font-size: 0.8em; /* Smaller text on card-back */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .card-container {
+      grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .card-container, .card-grid-wrapper {
+    }
+
+    .card-back p {
+        font-size: 0.8em; /* Reduce font size for smaller screens */
+    }
+}

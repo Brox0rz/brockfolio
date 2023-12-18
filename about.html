@@ -14,19 +14,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Brockfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/about.css">
 </head>
 <body>
     <script src="partials/header.js"></script>
+    <div class="secret-hero-fx"></div>
     <main>
         <section id="about-top">
             <div id="profile-pic">
                 <img src="images/rainbowblacklightbrock.jpg" alt="Brock Profile">
             </div>
             <div id="bio-text">
-                <!-- Biography text -->
                 <h1>Hi, I'm Brock!</h1>
                 <p>I hope you enjoy perusing my meanderings. I've wanted to learn how to code and design websites for my whole adult life.
                     Now that I've finally learned how, this process is becoming a way for me to appreciate the journey of learning and growing a skillset.
@@ -39,20 +39,39 @@
                  </p>
             </div>
         </section>
+        <h1>My Bucket List</h1>
         <section id="about-bottom">
-            <div class="text-item" id="bucket-list-1">Release a solo music album</div>
-            <div class="text-item" id="bucket-list-2">Build a music recording studio</div>
-            <div class="text-item" id="bucket-list-3">Find work I'm passionate about</div>
-            <div class="text-item" id="bucket-list-4">Buy 40 acres and create a permaculture farm</div>
+            
+            <a href="#release-album" class="bucket-list-card">
+                <div>Release a solo music album</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=vKhVnD4mxPA" class="bucket-list-card">
+                <div>Build a music recording studio</div>
+            </a>
+            <a href="https://www.keyvalues.com/" class="bucket-list-card">
+                <div>Find work I'm passionate about</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=loeUOsBCIe4" class="bucket-list-card">
+                <div>Buy 40 acres and create a permaculture farm</div>
+            </a>
+            
             <div id="central-image">
                 <img src="images/brox0rz-album-cover.png" alt="Central Image">
             </div>
-            <div class="text-item" id="bucket-list-5">Yoga and Martial Arts practice every day</div>
-            <div class="text-item" id="bucket-list-6">Steady streaming content for fun and side money</div>
-            <div class="text-item" id="bucket-list-7">Become an active musician again</div>
-            <div class="text-item" id="bucket-list-8">Achieve a mostly minimalistic lifestyle</div>
-            </div>
+            <a href="#yoga-martial-arts" class="bucket-list-card">
+                <div>Yoga and Martial Arts practice every day</div>
+            </a>
+            <a href="#streaming" class="bucket-list-card">
+                <div>Steady streaming content for fun and side money</div>
+            </a>
+            <a href="#musician-again" class="bucket-list-card">
+                <div>Become an active musician again</div>
+            </a>
+            <a href="#minimalistic-lifestyle" class="bucket-list-card">
+                <div>Achieve a mostly minimalistic lifestyle</div>
+            </a>
         </section>
+        
     </main>
     <script src="partials/footer.js"></script>
 </body>

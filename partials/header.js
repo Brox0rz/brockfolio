@@ -15,12 +15,12 @@ function createHeader() {
   header.innerHTML = `
       <nav aria-label="Main navigation">
           <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="api.html">API</a></li>
-              <li><a href="databases.html">Database Diagrams</a></li>
-              <li><a href="resume.html">Resume</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="databases.html">Database Diagrams</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="about.html">About</a></li>
           </ul>
       </nav>
   `;
