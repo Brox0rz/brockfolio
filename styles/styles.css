@@ -167,6 +167,7 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     flex: 1;
+    position: relative; /* Added for positioning context of .secret-hero-fx */
 }
 
 .secret-hero-fx {
@@ -186,8 +187,8 @@ main {
     width: 30%;
     background: url(../images/liquid-smoke-pallet.png);
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-repeat: repeat-y; /* Repeat vertically */
 }
 
 .secret-hero-fx::before {
@@ -197,6 +198,7 @@ main {
 .secret-hero-fx::after {
     right: 0;
 }
+
 
 
  /* landing page styles */
@@ -259,7 +261,7 @@ main {
 #R1 { margin-right: 10%; }
 #R2 { margin-right: 30%; }
 
-#C1 { margin-right: 50% }
+#C1 { margin-right: 30% }
 
 .hero-word.left {
     color: #DBD57D;
@@ -268,6 +270,11 @@ main {
 .hero-word.right {
     color: #B97EDC;
     justify-self: end;
+}
+.hero-word.center {
+    color: #B97EDC;
+    justify-self: center;
+    margin-top: 10%;
 }
 
 .hero-word:hover {
@@ -283,6 +290,14 @@ main {
 #music-section {
     background-image: url('images/lovely-brock-guitar-river-pic.jpg');
     color: #DBD57D;
+}
+
+#api-header {
+    margin-top: 30%;
+}
+
+#databases-header {
+    margin-top: 30%;
 }
 
 #web-dev-section, #music-section {
