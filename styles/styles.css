@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Full viewport height */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto Slab', serif; 
     line-height: 1.6;
     color: #333; /* General text color for readability */
     background: #e6e4cb;
@@ -138,10 +138,21 @@ a h1 {
     margin-top: 10px;
 }
 
+a h1:hover {
+    background-color: #B97EDC;
+    transition: background-color 0.3s ease;
+  }
+  
+  a h2:hover {
+    background-color: #B97EDC;
+    transition: background-color 0.3s ease;
+  }
+  
 /* Styling for headers and titles */
 
 h1, h2, h5, h6 {
     color: #4D5C43; /* Darker text for headers for contrast and emphasis */
+    font-family: 'Raleway', sans-serif; 
 }
 
 h1 {
@@ -535,4 +546,3 @@ main {
     .card-back p {
         font-size: 0.8em; /* Reduce font size for smaller screens */
     }
-}
