@@ -118,6 +118,13 @@ footer a {
     color: #DBD57D;
 }
 
+/* Tech Value Stream Header Style */
+#tech-value-stream-header {
+    padding-bottom: 50px;
+    margin-top: 30px;
+    }
+
+
 /* Buttons and Inputs */
 
 button, input[type="submit"], input[type="button"] {
@@ -510,6 +517,11 @@ main {
 }
 
 /* Responsive Styling */
+
+.video-card {
+    width: 100%;
+    }
+
 @media screen and (max-width: 768px) {
     #project-intro .main-image {
       max-width: 50%; /* Adjust width for smaller screens */
