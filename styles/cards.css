@@ -146,10 +146,13 @@
 
 .lower-landing-card {
     position: relative;
-    top: 20px;
+    top: 80px;
     left: -10px;
     z-index: 0;
+    width: calc(60% - 10px); /* Adjust width to 60%, subtracting any margins as necessary */
+    height: calc(60% - 10px); /* Adjust height to 60%, subtracting any margins as necessary */
 }
+
 
 
 /* resume styles */
