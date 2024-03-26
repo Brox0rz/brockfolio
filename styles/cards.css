@@ -144,6 +144,14 @@
   transition: all 0.3s ease;
 }
 
+.lower-landing-card {
+    position: relative;
+    top: 20px;
+    left: -10px;
+    z-index: 0;
+}
+
+
 /* resume styles */
 
 #resume-container {
@@ -270,3 +278,18 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: 768px) {
+    .lower-landing-card {
+        top: 15px;
+        left: -5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lower-landing-card {
+        top: 10px;
+        left: 0;
+    }
+}
+
