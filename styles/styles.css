@@ -284,6 +284,21 @@ main {
           2px 2px 0 #53435C; /* Creates an outline effect */
 }
 
+.name-hover {
+    display: inline-block;
+    cursor: pointer; /* Changes the cursor on hover to indicate it's clickable */
+}
+
+.name-hover:hover .hero-word.left {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+.hero-word:hover:not(.name-hover .hero-word) {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
 #L1 { margin-left: 10%; }
 #L2 { margin-left: 15%; }
 #L3 { margin-left: 5%; }
