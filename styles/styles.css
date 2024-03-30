@@ -251,14 +251,27 @@ main {
 }
 
 .hero-text {
-    display: grid;
-    grid-template-rows: repeat(6, 2fr);
-    max-height: 6vh;
+    display: flex;
+    justify-content: center;
     position: absolute;
-    top: 8%;
+    top: 4%;
     left: 0;
     right: 0;
-    z-index: 2; /* Ensures text is above the hero image */
+    z-index: 2; /* to be above the hero image */
+    text-align: center; /* Centers the text blocks */
+}
+
+.hero-group {
+    display: inline-flex;
+    flex-direction: column; /* Stacks the words vertically */
+    align-items: center; /* Centers the words horizontally */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* General hover effect for the group */
+.hero-group:hover {
+    transform: translateY(-10px);
 }
 
 .hero-projects-text {
@@ -284,19 +297,17 @@ main {
           2px 2px 0 #53435C; /* Creates an outline effect */
 }
 
-.name-hover {
+.hero-hover {
     display: inline-block;
     cursor: pointer; /* Changes the cursor on hover to indicate it's clickable */
 }
 
-.name-hover:hover .hero-word.left {
-    transform: translateY(-3px);
-    transition: all 0.3s ease;
+#name-group {
+    margin-right: 15%;
 }
 
-.hero-word:hover:not(.name-hover .hero-word) {
-    transform: translateY(-3px);
-    transition: all 0.3s ease;
+#role-group {
+    margin-left: 15%;
 }
 
 #L1 { margin-left: 10%; }
@@ -339,14 +350,43 @@ main {
     color: #B97EDC; 
 }
 
-.hero-word:hover {
-    transform: translateY(-3px);
-    transition: all 0.3s ease;
+#web-dev-section {
+    background-image: url('images/smokey-brock.jpg');
+}
+
+.devops-links {
+    /* width: 80%; No longer centering the div with auto margin */
+    padding: 15px;
+    background-color: #f9f9f9; /* Example background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Example shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    z-index: 10;
+    width: 20%;
 }
 
 
-#web-dev-section {
-    background-image: url('images/smokey-brock.jpg');
+
+.devops-links h2 {
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Dark text for contrast */
+}
+
+.devops-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.devops-links ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.devops-links ul li {
+    margin-bottom: 5px; /* Spacing between list items */
 }
 
 #music-section {
