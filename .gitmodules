@@ -1,0 +1,6 @@
+[submodule "web-425/gpa-calculator-app"]
+    path = web-425/gpa-calculator-app
+    url = https://github.com/Brox0rz/gpa-calculator-app.git
+[submodule "web-425/in-n-out-books-app"]
+    path = web-425/in-n-out-books-app
+    url = https://github.com/Brox0rz/in-n-out-books-app.git
