@@ -3,7 +3,7 @@
 ; Title:  styles.css
 ; Author: Brock Hemsouvanh
 ; Date:   07 Dec 2023
-; Updated: 26 May 2025
+; Updated: 27 May 2025
 ; Description: CSS stylesheet for brockfolio site
 ;===========================================
 */
@@ -159,7 +159,7 @@ a h1:hover {
 /* Styling for headers and titles */
 
 h1, h2, h5, h6 {
-    color: #4D5C43; /* Darker text for headers for contrast and emphasis */
+    color: #2a1e33; /* Darker text for headers for contrast and emphasis */
     font-family: 'Raleway', sans-serif; 
 }
 
@@ -355,34 +355,32 @@ main {
 }
 
 .devops-links {
-    /* width: 80%; No longer centering the div with auto margin */
     padding: 15px;
-    background-color: #f9f9f9; /* Example background color */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Example shadow for depth */
-    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9;
+    border: 6px solid #2a1e33;      
+    border-radius: 6px;              
     margin-left: 5%;
     margin-top: 10%;
     margin-bottom: 5%;
     z-index: 10;
     width: 20%;
-}
-
-
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .devops-links ul li a {
+    text-decoration: none;
+    color: #4D5C43;               
+    font-weight: bold;
+  }
 
 .devops-links h2 {
-    margin-bottom: 10px; /* Space below the heading */
-    color: #333; /* Dark text for contrast */
+    margin-bottom: 10px; 
+    color: #333;
 }
 
 .devops-links ul {
     list-style-type: none;
     padding: 0;
-}
-
-.devops-links ul li a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
 }
 
 .devops-links ul li {
@@ -570,46 +568,3 @@ main {
 #project-intro .main-image {
     border-radius: 50%;
 }
-
-/* Responsive Styling */
-
-.video-card {
-    width: 100%;
-    }
-
-@media screen and (max-width: 768px) {
-    #project-intro .main-image {
-      max-width: 50%; /* Adjust width for smaller screens */
-      margin-bottom: 15px; /* Adjust bottom margin */
-    }
-  
-    .card-container {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
-    }
-  
-    .card {
-      height: auto; /* Adjust card height */
-    }
-  
-    .card-link-wrapper a h2 {
-      font-size: 1.2em; /* Smaller font size for h2 */
-    }
-  
-    .card-back {
-      font-size: 0.8em; /* Smaller text on card-back */
-    }
-
-    .card-grid-wrapper {
-        margin-top: 5%;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    .card-container {
-      grid-template-columns: 1fr; /* 1 column for very small screens */
-    }
-  }
-
-    .card-back p {
-        font-size: 0.8em; /* Reduce font size for smaller screens */
-    }
