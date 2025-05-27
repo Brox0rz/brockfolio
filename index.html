@@ -3,64 +3,58 @@
 ; Title:  index.html
 ; Author: Brock Hemsouvanh
 ; Date:   26 Nov 2023
-; Modified: 22 May 2025
+; Modified: 26 May 2025
 ; Description: Landing page for the brockfolio site
 ;===========================================
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/cards.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,900;1,200&family=Roboto+Slab:wght@300;400;700&display=swap&family=Fredericka+the+Great&display=swap" rel="stylesheet" rel="stylesheet">
-    <title>Brock Hemsouvanh - Professional Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brock Hemsouvanh - Professional Portfolio</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/cards.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,900;1,200&family=Roboto+Slab:wght@300;400;700&family=Fredericka+the+Great&display=swap" rel="stylesheet" />
+<title>Brock Hemsouvanh - Professional Portfolio</title>
 </head>
 <body>
-    <script src="partials/header.js"></script>
-    <main>
-        <section id="hero">
-            <div class="hero-text">
-                <div class="hero-group" id="name-group">
-                    <span class="hero-word left">Brock</span>
-                    <span class="hero-word left">Hemsouvanh</span>
-                </div>
-                <div class="hero-group" id="role-group">
-                    <span class="hero-word right">Professional</span>
-                    <span class="hero-word right">Portfolio</span>
-                </div>
-            </div>
-        </section>
-        
-        <div id="landing-card-container">
-            <div class="landing-card">
-                <a href="projects.html">
-                    <img src="images/smokey-brock.jpg" alt="Web Development">
-                </a>
-            </div>
-            <div class="landing-card">
-                <a href="https://soundcloud.com/user-861544260">
-                    <img src="images/lovely-brock-guitar-river-pic.jpg" alt="Music Production">
-                </a>
-            </div>
+  <script src="partials/header.js"></script>
+  <main>
+    <section id="hero">
+      <div class="landing-card-wrapper">
+        <div class="floating-label left">Web Development</div>
+        <div class="floating-label right">Music Portfolio</div>
+
+        <div class="landing-card">
+          <a href="projects.html">
+            <img src="images/smokey-brock.jpg" alt="Web Development" />
+          </a>
         </div>
 
-        <div class="devops-links">
-            <h2>DevOps Presentations</h2>
-            <ul>
-                <li><a href="web-430/hemsouvanh-tech-value-stream.html">Tech Value Stream</a></li>
-                <li><a href="web-430/hemsouvanh-two-pizza-rule.html">The Two Pizza Rule</a></li>
-                <li><a href="web-430/hemsouvanh-devops-automated-testing.html">DevOps Automated Testing</a></li>
-                <li><a href="web-430/continuous-integration.html">Continuous Integration</a></li>
-                <li><a href="web-430/pager-rotation-duties.html">Pager Rotation Duties</a></li>
-                <li><a href="web-430/security-controls.html">Security Controls</a></li>
-                <li><a href="web-430/change-management.html">Change Management</a></li>
-            </ul>
+        <div class="landing-card">
+          <a href="https://soundcloud.com/user-861544260">
+            <img src="images/lovely-brock-guitar-river-pic.jpg" alt="Music Portfolio" />
+          </a>
         </div>
-    </main>
-    <script src="partials/footer.js"></script>
+      </div>
+    </section>
+
+    <div class="devops-links">
+      <h2>DevOps Presentations</h2>
+      <ul>
+        <li><a href="web-430/hemsouvanh-tech-value-stream.html">Tech Value Stream</a></li>
+        <li><a href="web-430/hemsouvanh-two-pizza-rule.html">The Two Pizza Rule</a></li>
+        <li><a href="web-430/hemsouvanh-devops-automated-testing.html">DevOps Automated Testing</a></li>
+        <li><a href="web-430/continuous-integration.html">Continuous Integration</a></li>
+        <li><a href="web-430/pager-rotation-duties.html">Pager Rotation Duties</a></li>
+        <li><a href="web-430/security-controls.html">Security Controls</a></li>
+        <li><a href="web-430/change-management.html">Change Management</a></li>
+      </ul>
+    </div>
+  </main>
+  <script src="partials/footer.js"></script>
 </body>
 </html>
