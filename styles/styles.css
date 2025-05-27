@@ -3,6 +3,7 @@
 ; Title:  styles.css
 ; Author: Brock Hemsouvanh
 ; Date:   07 Dec 2023
+; Updated: 26 May 2025
 ; Description: CSS stylesheet for brockfolio site
 ;===========================================
 */
@@ -221,14 +222,6 @@ main {
 
  /* landing page styles */
 
-#hero {
-    background-image: url('../images/lab-brock-cropped.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 40vh;
-}
 
 #hero::before, #hero::after {
     content: '';
