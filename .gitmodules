@@ -4,3 +4,6 @@
 [submodule "web-425/in-n-out-books-app"]
     path = web-425/in-n-out-books-app
     url = https://github.com/Brox0rz/in-n-out-books-app.git
+[submodule "web-425/loan-app"]
+    path = web-425/loan-app
+    url = https://github.com/Brox0rz/loan-app.git
