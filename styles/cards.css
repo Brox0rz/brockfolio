@@ -20,8 +20,8 @@
   padding: 20px;
   margin: 20px auto;
   perspective: 1000px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #4D5C43;
+  box-shadow: none;
+  background: transparent;
   transition: 0.3s;
 }
 
@@ -58,7 +58,7 @@
   font-size: 0.9em;
 }
 
-.card.is-flipped {
+.card:hover {
   transform: rotateY(180deg);
 }
 
@@ -96,7 +96,7 @@
 }
 
 .card-link-wrapper {
-  background-color: #DBD57D;
+  background: transparent;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -108,11 +108,11 @@
 }
 
 .card-grid-wrapper, .card-link-wrapper {
-  background-color: #DBD57D;
+  background: transparent;
   padding: 20px;
   margin: 20px auto;
   width: 95%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: none;
 }
 
 /* ============================== */

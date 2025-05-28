@@ -3,8 +3,8 @@
 ; Title:  projects.html
 ; Author: Brock Hemsouvanh
 ; Date:   26 Nov 2023
-; Modified: 05/09/2024
-; Description: projects page for the brockfolio site
+; Modified: 07/10/2025
+; Description: Projects page with hover-based flip cards
 ;===========================================
 */
 -->
@@ -24,154 +24,123 @@
     <script src="partials/header.js"></script>
 
     <main>
-        <div class="hero-projects-text">
-            <span class="hero-word left" id="L3">Bellevue/span>
-            <span class="hero-word left" id="L4">Course Projects</span>
-            <span class="hero-word right" id="R3">Angel the Tuxedo Cat:</span>
-            <span class="hero-word right" id="R4">is my project manager.</span>
-        </div>
+        <div class="floating-label">Bellevue<br><span>Course Projects</span></div>
         <div class="secret-hero-fx"></div>
-        <section id="project-intro">
-            <img src="images/angel-silla.jpg" alt="Angel the Tuxedo Cat is my project manager." class="main-image">
-        </section>
         <div class="card-grid-wrapper">
-            <h1>Bellevue Course Projects</h1>
             <div class="card-container">
-                <div class="card-link-wrapper">
-                    <a href="https://brox0rz.github.io/web-231/" target="_blank"><h2>Web-231</h2></a>
-                    <div class="card" onclick="flipCard(this)">
+                
+                <a href="https://brox0rz.github.io/web-231/" target="_blank" class="card-link-wrapper">
+                    <div class="card">
                         <div class="card-front">
                             <img src="images/hemsouvanh-web-231-landing.png" alt="Web-231 Course Projects">
                         </div>
                         <div class="card-back" id="web-231-card-back">
-                            <h2>Description</h2>
-                            <p>Learned JavaScript programming language syntax, software design, coding, documenting, and 
-                                debugging strategies. Topics included Data Types, Reference Types, Operators, Objects, Control Statements, and 
-                                Functions.</p>
+                            <h2>Web-231</h2>
+                            <p>Learned JavaScript programming language syntax, software design, coding, documenting, and debugging strategies. Topics included Data Types, Reference Types, Operators, Objects, Control Statements, and Functions.</p>
                         </div>
                     </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="https://brox0rz.github.io/web-330/" target="_blank"><h2>Web-330</h2></a>
-                    <div class="card" onclick="flipCard(this)">
+                </a>
+
+                <a href="https://brox0rz.github.io/web-330/" target="_blank" class="card-link-wrapper">
+                    <div class="card">
                         <div class="card-front">
                             <img src="images/hemsouvanh-web-330-landing.png" alt="Web-330 Course Projects">
                         </div>
                         <div class="card-back">
-                            <h2>Description</h2>
-                            <p>Used a wide range of advanced JavaScript programming strategies to build interactive programs solving real-world problems. 
-                                Topics included object-oriented programming, unit testing, asynchronous executions, files and streams, lambda expressions, and 
-                                module bundlers.</p>
+                            <h2>Web-330</h2>
+                            <p>Used advanced JavaScript programming strategies including OOP, unit testing, asynchronous execution, lambda expressions, and module bundlers.</p>
                         </div>
                     </div>
-                </div>    
-                <div class="card-link-wrapper">
-                    <a href="https://hemsouvanh-middleearthpolitics-app.onrender.com/api-docs" target="_blank"><h2>Web-420</h2></a>
-                    <div class="card" onclick="flipCard(this)">
+                </a>
+
+                <a href="https://hemsouvanh-middleearthpolitics-app.onrender.com/api-docs" target="_blank" class="card-link-wrapper">
+                    <div class="card">
                         <div class="card-front">
                             <img src="images/testget-findAllTeams-api.png" alt="Web-420 Capstone Project">
                         </div>
                         <div class="card-back">
-                            <h2>Description</h2>
-                            <p>The page linked is a testing ground for a few RESTful APIs. Each labeled category embodies a unique web application scenario. 
-                                The Teams API is designed to create a FANTASY league of "teams" and "players" from the realm of Middle Earth. Basic functions
-                                 such as adding or deleting teams and players are the main operations of this project. Enjoy!
-                            </p>
+                            <h2>Web-420</h2>
+                            <p>Fantasy league RESTful API project with CRUD operations on Middle Earth-themed teams and players.</p>
                         </div>
                     </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="https://brox0rz.github.io/enterprise-composer-app/" target="_blank"><h2>Composer App</h2></a>
-                    <div class="card" onclick="flipCard(this)">
+                </a>
+
+                <a href="https://brox0rz.github.io/enterprise-composer-app/" target="_blank" class="card-link-wrapper">
+                    <div class="card">
                         <div class="card-front">
                             <img src="images/composer-app-observable-proof-johan.png" alt="Composer App">
                         </div>
                         <div class="card-back">
-                            <h2>Description</h2>
-                            <p>A dynamic Angular application using TypeScript for enhanced type safety, designed to showcase the modular loading of components.</p>
+                            <h2>Composer App</h2>
+                            <p>Angular/TypeScript app demonstrating modular components and observable services.</p>
                         </div>
                     </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="https://brox0rz.github.io/gpa-calculator-app/" target="_blank"><h2>GPA Calculator</h2></a>
-                    <div class="card" onclick="flipCard(this)">
+                </a>
+
+                <a href="https://brox0rz.github.io/gpa-calculator-app/" target="_blank" class="card-link-wrapper">
+                    <div class="card">
                         <div class="card-front">
                             <img src="images/gpa-calc-proof.png" alt="GPA Calculator App">
                         </div>
                         <div class="card-back">
-                            <h2>Description</h2>
-                            <p>Built with Angular and Angular Material that allows students to track and calculate their GPA. Features include adding/removing 
-                                courses, inputting grades, and dynamic GPA calculation. Utilizes Angular forms and routing for a responsive design.</p>
+                            <h2>GPA Calculator</h2>
+                            <p>Angular/Material app for GPA calculation with course and grade input functionality.</p>
                         </div>
                     </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="https://brox0rz.github.io/in-n-out-books-app/" target="_blank"><h2>In-N-Out-Books</h2></a>
-                    <div class="card" onclick="flipCard(this)">
+                </a>
+
+                <a href="https://brox0rz.github.io/in-n-out-books-app/" target="_blank" class="card-link-wrapper">
+                    <div class="card">
                         <div class="card-front">
                             <img src="images/in-n-out-books-proof.png" alt="In-N-Out-Books">
                         </div>
                         <div class="card-back">
-                            <h2>Description</h2>
-                            <p>A web application built with Angular and Angular Material that allows users to explore a curated list of 
-                                favorite books, providing detailed information including title, authors, and description. The app retrieves 
-                                book data from the Open Library API, enabling seamless discovery and interaction with book details.</p>
+                            <h2>In-N-Out-Books</h2>
+                            <p>Angular app retrieving book data from Open Library API for a curated reading experience.</p>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="card-link-wrapper">
-                    <a href="https://brox0rz.github.io/loan-app/" target="_blank"><h2>Loan App</h2></a>
-                    <div class="card" onclick="flipCard(this)">
-                      <div class="card-front">
-                        <img src="images/loan-app-proof.png" alt="Loan App">
-                      </div>
-                      <div class="card-back">
-                        <h2>Description</h2>
-                        <p>A web application built with Angular and Angular Material that helps users calculate loan details. 
-                            Users can input the loan amount, interest rate, and loan term to get the monthly payment and total interest paid. 
-                            The app provides a user-friendly interface for managing and understanding loan details. Ravenclaw colors!</p>
-                      </div>
+                <a href="https://brox0rz.github.io/loan-app/" target="_blank" class="card-link-wrapper">
+                    <div class="card">
+                        <div class="card-front">
+                            <img src="images/loan-app-proof.png" alt="Loan App">
+                        </div>
+                        <div class="card-back">
+                            <h2>Loan App</h2>
+                            <p>Loan calculator built in Angular that provides monthly payment and interest summaries.</p>
+                        </div>
                     </div>
-                  </div>
-                  
-                <div class="card-link-wrapper">
-                    <a href="https://nodebucket-3u6b.onrender.com/" target="_blank"><h2>Nodebucket</h2></a>
-                    <div class="card" onclick="flipCard(this)">
+                </a>
+
+                <a href="https://nodebucket-3u6b.onrender.com/" target="_blank" class="card-link-wrapper">
+                    <div class="card">
                         <div class="card-front">
                             <img src="images/nodebucket-thumbnail.png" alt="Nodebucket">
                         </div>
                         <div class="card-back">
-                            <h2>Description</h2>
-                            <p>Nodebucket is a task management application built with the MEAN stack (MongoDB, Express.js, Angular, Node.js). 
-                                It is designed to help users prioritize, manage, and track their tasks effortlessly.</p>
+                            <h2>Nodebucket</h2>
+                            <p>Task management app using the MEAN stack to manage and track user tasks efficiently.</p>
                         </div>
                     </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="https://bcrs-vv8a.onrender.com/" target="_blank"><h2>Bob's Computer Repair Shop</h2></a>
-                    <div class="card" onclick="flipCard(this)">
+                </a>
+
+                <a href="https://bcrs-vv8a.onrender.com/" target="_blank" class="card-link-wrapper">
+                    <div class="card">
                         <div class="card-front">
                             <img src="images/bcrs-home.png" alt="Computer Repair Shop">
                         </div>
                         <div class="card-back">
-                            <h2>Description</h2>
-                            <p>Bob's Computer Repair Shop (BCRS) is a comprehensive application designed to streamline and automate the service repair process for 
-                                Bob's Computer Repair Shop. The project aims to replace the existing manual system with an efficient, user-friendly, and modern web 
-                                application that enhances both customer and employee experiences.</p>
+                            <h2>Bob's Computer Repair Shop</h2>
+                            <p>MEAN stack app replacing a manual repair tracking process with a modern web interface.</p>
                         </div>
                     </div>
-                </div>
+                </a>
+
             </div>
         </div>
     </main>
 
     <script src="partials/footer.js"></script>
-
-    <script>
-        function flipCard(cardElement) {
-            cardElement.classList.toggle('is-flipped');
-        }
-    </script>
 </body>
 </html>
