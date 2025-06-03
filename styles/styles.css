@@ -3,7 +3,7 @@
 ; Title:  styles.css
 ; Author: Brock Hemsouvanh
 ; Date:   07 Dec 2023
-; Updated: 01 June 2025
+; Updated: 02 June 2025
 ; Description: CSS stylesheet for brockfolio site
 ;===========================================
 */
@@ -187,7 +187,6 @@ main {
     flex-direction: column;
     flex: 1;
     position: relative; /* Added for positioning context of .secret-hero-fx */
-    margin-top: 4rem; /* Space below the header */
 }
 
 .secret-hero-fx {
@@ -391,6 +390,11 @@ main {
 #music-section {
     background-image: url('images/lovely-brock-guitar-river-pic.jpg');
     color: #DBD57D;
+}
+
+#api-header {
+    position: relative;
+    padding-top: 4rem; /* Adjust as needed for header height */
 }
 
 #databases-header {

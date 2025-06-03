@@ -3,7 +3,7 @@
 ; Title:  cards.css
 ; Author: Brock Hemsouvanh
 ; Date:   08 Dec 2023
-; Updated: 01 June 2025
+; Updated: 02 June 2025
 ; Description: CSS stylesheet for cards throughout the brockfolio site
 ;===========================================
 */
@@ -19,6 +19,7 @@
   width: 95%;
   padding: 20px;
   margin: 20px auto;
+  margin-top: 6rem;
   perspective: 1000px;
   box-shadow: none;
   background: transparent;
@@ -252,6 +253,7 @@
 @media screen and (max-width: 768px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 4rem;
   }
 
   .card {
