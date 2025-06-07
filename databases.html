@@ -3,6 +3,7 @@
 ; Title:  databases.html
 ; Author: Brock Hemsouvanh
 ; Date:   07 Dec 2023
+; Updated: 06 Jun 2025
 ; Description: database page for the brockfolio site
 ;===========================================
 */
@@ -22,14 +23,12 @@
     <script src="partials/header.js"></script>
     <div class="secret-hero-fx"></div>
     <main>
-        <section id="databases-header"><div class="hero-text">
-            <span class="hero-word center" id="C1">Databases</span>
-        </div>
         <!-- future description here -->
     </section>
 
     <div class="card-grid-wrapper">
-        <h1>Bellevue Database Projects</h1>
+        <section id="databases-header"><div class="floating-label">Databases
+        </div>
         <div class="card-container">
             <!-- Card 1 -->
             <div class="card-link-wrapper">
@@ -115,10 +114,44 @@
 </main>
     
     <script src="partials/footer.js"></script>
+    <!-- Modal for enlarged card image -->
+    <div id="imageModal" class="modal" style="display:none;">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImg" alt="">
+        <div id="modalCaption"></div>
+    </div>
     <script>
-        function flipCard(cardElement) {
-            cardElement.classList.toggle('is-flipped');
-        }
+      document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImg');
+        const modalCaption = document.getElementById('modalCaption');
+        const closeModal = document.getElementById('closeModal');
+
+        document.querySelectorAll('.card').forEach(card => {
+          card.addEventListener('click', function(e) {
+            // Prevent click from triggering if modal is already open
+            if (modal.style.display === 'block') return;
+            // Find the image inside the card-front
+            const img = this.querySelector('.card-front img');
+            if (img) {
+              modal.style.display = 'block';
+              modalImg.src = img.src;
+              modalImg.alt = img.alt;
+              modalCaption.textContent = img.alt;
+            }
+          });
+        });
+
+        closeModal.onclick = function() {
+          modal.style.display = 'none';
+        };
+
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = 'none';
+          }
+        };
+      });
     </script>
 </body>
 </html>
