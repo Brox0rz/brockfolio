@@ -3,7 +3,7 @@
 ; Title:  styles.css
 ; Author: Brock Hemsouvanh
 ; Date:   07 Dec 2023
-; Updated: 27 May 2025
+; Updated: 25 May 2026
 ; Description: CSS stylesheet for brockfolio site
 ;===========================================
 */
@@ -233,6 +233,7 @@ main {
 
 #hero::after {
     right: 0;
+    transform: scaleX(-1);
 }
 
 .hero-text {
