@@ -3,7 +3,7 @@
 ; Title:  styles.css
 ; Author: Brock Hemsouvanh
 ; Date:   07 Dec 2023
-; Updated: 06 June 2025
+; Updated: 27 May 2025
 ; Description: CSS stylesheet for brockfolio site
 ;===========================================
 */
@@ -136,25 +136,10 @@ button, input[type="submit"], input[type="button"] {
     cursor: pointer;
 }
 
-/*  accent color for anchor tag underlines */
-a {
-    text-decoration-color: #B97EDC;
-}
-
 a h1 {
     text-align: center;
     margin-top: 10px;
 }
-
-a h1:hover {
-    background-color: #B97EDC;
-    transition: background-color 0.3s ease;
-  }
-  
-  a h2:hover {
-    background-color: #B97EDC;
-    transition: background-color 0.3s ease;
-  }
   
 /* Styling for headers and titles */
 
@@ -393,8 +378,7 @@ main {
 }
 
 #api-header {
-    position: relative;
-    padding-top: 4rem; /* Adjust as needed for header height */
+    margin-top: 30%;
 }
 
 #databases-header {
