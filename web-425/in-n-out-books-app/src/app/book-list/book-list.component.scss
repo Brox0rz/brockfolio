@@ -1,0 +1,16 @@
+/*
+ * Title: book-list.component.scss
+ * Authors: Professor Richard Krasso and Brock Hemsouvanh
+ * Date: 4/21/2024
+ * Modified: 05/08/2024
+ * Description: CSS styling for the Book List component.
+ */
+
+.a-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.a-link:hover {
+  text-decoration: underline;
+}

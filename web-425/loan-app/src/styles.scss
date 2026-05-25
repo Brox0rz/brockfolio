@@ -1,0 +1,141 @@
+/* Title: styles.scss
+ * Authors: Professor Richard Krasso and Brock Hemsouvanh
+ * Date Created: 5/12/2024
+ * Modified by Brock Hemsouvanh: 05/19/2024
+ * Description: Global styles for the Loan App with a Ravenclaw theme.
+ */
+
+ @import "~@angular/material/prebuilt-themes/purple-green.css";
+
+ // Ravenclaw theme colors
+ :root {
+   --ravenclaw-primary: #0e1a40;  // A dark blue representing Ravenclaw's primary house color
+   --ravenclaw-secondary: #946b2d;  // A bronze color reflecting Ravenclaw's secondary color
+   --ravenclaw-accent: #c0c0c0;  // Silver for accents and highlights
+   --background-grey: #2e2e2e;   // Dark grey for background
+   --card-background: #424242;   // Slightly lighter grey for cards
+ }
+
+ // General body styling
+ body {
+   font-family: 'Merriweather', serif; // Elegant typeface for a scholarly look
+   color: var(--ravenclaw-primary);
+   background-color: var(--background-grey); // Dark grey background for the entire page
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ // Global link styling
+ a {
+   color: var(--ravenclaw-accent);
+   text-decoration: none; // Removes underline from all links
+
+   &:hover {
+     color: var(--ravenclaw-secondary);
+     text-decoration: underline; // Underline on hover for better interaction visibility
+   }
+ }
+
+ // Navigation styling
+ .toolbar {
+   background-color: var(--ravenclaw-primary);
+   color: var(--ravenclaw-accent);
+ }
+
+ // Highlight color for form fields
+ .mat-form-field-appearance-fill .mat-form-field-flex {
+   background-color: var(--ravenclaw-primary);
+ }
+
+ .mat-form-field-appearance-fill .mat-form-field-label,
+ .mat-form-field-appearance-fill.mat-focused .mat-form-field-label {
+   color: var(--ravenclaw-secondary);
+ }
+
+ .mat-form-field-appearance-fill .mat-form-field-underline {
+   background-color: var(--ravenclaw-secondary);
+ }
+
+ // Styling for the calculate button
+ .calculate-button {
+   background-color: var(--ravenclaw-secondary);
+   color: var(--ravenclaw-primary);
+ }
+
+ // Container for main content area, providing padding and layout consistency
+ .main-container {
+   padding: 20px;
+   background-color: var(--card-background); // Grey background for cards
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   color: var(--ravenclaw-accent); // Text color
+ }
+
+ // Styling for the home component container
+ .home-container {
+   padding: 20px;
+   background-color: var(--background-grey); // Dark grey background for the entire page
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+ }
+
+ // Result cards styling to remove shadow and borders
+ .result-card {
+   background-color: var(--card-background); // Grey background for result cards
+   box-shadow: none;
+   border: none;
+ }
+
+ // Specific styles for the about card
+ .about-card {
+   padding: 20px;
+   background-color: var(--card-background);
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   color: var(--ravenclaw-accent); // Text color
+ }
+
+ // About container styling
+ .about-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+ }
+
+ // About content styling
+ .about-content {
+   width: 75%;
+ }
+
+ // Contact cards styling
+ .contact-card {
+   padding: 20px;
+   background-color: var(--card-background);
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   color: var(--ravenclaw-accent); // Text color
+ }
+
+ // Contact container styling
+ .contact-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+ }
+
+ // CSS to remove up/down arrows from input type number
+ input[type="number"] {
+   appearance: textfield; // Standard property
+   -moz-appearance: textfield; // Firefox
+   -webkit-appearance: none; // Chrome, Safari, and Edge
+ }
+
+ input[type="number"]::-webkit-outer-spin-button,
+ input[type="number"]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }

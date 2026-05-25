@@ -1,0 +1,40 @@
+<!--
+ * Title: base-layout.component.html
+ * Author: Professor Richard Krasso
+ * Date: 4/26/2024
+ * Modified by: Brock Hemsouvanh 05/04/2024
+ * Description: HTML template for the base-layout component of the GPA Calculator application.
+ *              This template uses Angular Flex Layout to arrange content in a responsive design.
+-->
+
+<mat-toolbar color="primary">
+
+  <mat-toolbar-row>
+    <div class="logo">
+      <img src="./assets/gpa-calculator-app.png" height="80" />
+    </div>
+
+    <div style="width: 80%">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button mat-button routerLink="/">Home</button>
+        <button mat-button (click)="signOut()">Sign Out</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br />
+
+<div fxLayout="row wrap">
+
+  <div fxFlex>
+
+    <mat-card class="main-container mat-elevation-z0">
+      <mat-card title>{{ assignment }}</mat-card>
+      <br /><br />
+      <mat-card-content>
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

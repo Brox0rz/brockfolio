@@ -1,0 +1,19 @@
+<!-- Title: book-details-dialog.component.html
+Authors: Professor Richard Krasso and Brock Hemsouvanh
+Date: 4/21/2024
+Description: Book Details Dialog component template for displaying book details. -->
+
+<mat-card>
+  <mat-card-title style="color: blue;">{{ book.title }}</mat-card-title>
+  <mat-card-content>
+    <div fxLayout="column">
+      <p>ISBN: {{ book.isbn }}</p>
+      <p>Title: {{ book.title }}</p>
+      <p>Number of Pages: {{ book.numOfPages }}</p>
+      <p>Authors: {{ book.authors.join(', ') }}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent" [matDialogClose]="'confirm'">OK</button>
+  </mat-card-actions>
+</mat-card>

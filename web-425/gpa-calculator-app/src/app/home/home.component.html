@@ -1,0 +1,63 @@
+<!-- Title: home.component.html
+Authors: Professor Richard Krasso and Brock Hemsouvanh
+Modified by: Brock Hemsouvanh on 05/05/2024
+Date: 4/26/2024
+Description: Home component template for GPA Calculator App, containing the grade entry form, transcript summary, and GPA display.
+-->
+
+<div fxLayout="row wrap" fxLayoutGap="20px">
+  <div fxFlex class="grade-form">
+    <mat-card class="mat-elevation-z8">
+      <mat-card-title>Grade Entry</mat-card-title>
+      <mat-card-content>
+        <!-- Form setup with Angular's FormGroup linking to reactive form defined in component.ts -->
+        <form [formGroup]="transcriptForm" (ngSubmit)="onSubmit($event); transcriptForm.reset()" fxLayout="column" fxLayoutGap="10px">
+          <!-- Input for course with FormControlName for reactive form bindings -->
+          <mat-form-field fxFlex>
+            <mat-label>Course</mat-label>
+            <input matInput id="txtCourse" formControlName="course" name="txtCourse" required>
+          </mat-form-field>
+          <!-- Select dropdown for grade selection with reactive form control -->
+          <mat-form-field fxFlex>
+            <mat-label>Grade</mat-label>
+            <mat-select formControlName="grade" name="selectGrade" required>
+              <!-- Loop over grades for options -->
+              <mat-option *ngFor="let grade of selectableGrades" [value]="grade">{{ grade }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <!-- Submit button enabled only when form is valid -->
+          <button type="submit" mat-raised-button color="primary" fxFlex [disabled]="!transcriptForm.valid">Save</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div fxFlex class="grade-summary">
+    <!-- Button to clear all entries from the transcript -->
+    <button mat-button color="primary" (click)="clearEntries()">Clear Transcript</button>
+    <mat-card class="mat-elevation-z8">
+      <!-- Display area for the list of transcript entries -->
+      <mat-card-title>Transcript</mat-card-title>
+      <mat-card-content>
+        <!-- List all transcript entries using a custom component -->
+        <app-grade-summary *ngFor="let entry of transcriptEntries" [course]="entry.course" [grade]="entry.grade"></app-grade-summary>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<br /><br />
+
+<div fxLayout="column" fxLayoutGap="20px">
+  <div fxFlex class="gpa">
+
+    <button mat-button color="primary" (click)="calculateResults()">Calculate GPA</button>
+    <mat-card class="mat-elevation-z8">
+
+      <mat-card-title style="text-align: center;">
+        <app-gpa [gpaTotal]="gpaTotal"></app-gpa>
+      </mat-card-title>
+
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+/**
+ * Title: home.component.css
+ * Author: Professor Richard Krasso
+ * Modified by: Brock Hemsouvanh
+ * Date Created: 4/26/2024
+ * Date Modified: 05/05/2024
+ * Description: CSS styles for the Home component of the GPA Calculator application.
+ */
+
+
+.grade-form {
+  margin-left: 8px;
+}

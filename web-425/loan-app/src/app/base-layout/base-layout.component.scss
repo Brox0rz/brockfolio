@@ -1,0 +1,55 @@
+/**
+ * Title: base-layout.component.scss
+ * Authors: Professor Richard Krasso and Brock Hemsouvanh
+ * Date Created: 05/10/2024
+ * Modified: 05/17/2024, 05/18/2024
+ * Description: SCSS styling for the base layout component providing navigation styles with Ravenclaw theme.
+ */
+
+ $primary-color: #0e1a40;  // Dark blue (Ravenclaw primary)
+ $secondary-color: #946b2d;  // Bronze (Ravenclaw secondary)
+ $accent-color: #c0c0c0;  // Silver for accents
+
+ .toolbar {
+   background-color: $primary-color;
+   color: $accent-color;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ nav {
+   background-color: $primary-color;
+   padding: 10px;
+   text-align: center;
+   width: 100%;
+
+   ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+   }
+
+   li {
+     display: inline-block;
+   }
+
+   a {
+     color: $secondary-color;
+     text-decoration: none;
+     font-weight: bold;
+
+     &:hover {
+       text-decoration: underline;
+       color: $accent-color;
+     }
+   }
+ }
+
+ router-outlet {
+   margin-top: 20px;
+ }

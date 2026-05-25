@@ -1,0 +1,22 @@
+/*
+  Title: sign-in.component.css
+  Authors: Professor Richard Krasso and Brock Hemsouvanh
+  Modified by: Brock Hemsouvanh
+  Date: 05/04/2024
+  Description: Styles for the Sign-In component of the GPA Calculator App.
+*/
+
+.signin-container {
+  width: 35%;
+  margin: 15% auto;
+}
+.msg-error {
+  margin: 10px 0;
+  padding: 12px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+.signin-container > mat-card-title, mat-card-subtitle {
+  text-align: center;
+}

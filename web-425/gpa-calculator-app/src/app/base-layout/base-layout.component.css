@@ -1,0 +1,17 @@
+/**
+ * File: base-layout.component.css
+ * Author: Professor Richard Krasso
+ * Description: Styles for the Base Layout Component, enhancing the visual appeal and usability of the navigation and content display areas.
+ * Created: 4/26/2024
+ * Modified by: Brock Hemsouvanh on 4/26/2024
+ */
+
+ .logo {
+  margin-top: 5px;
+}
+
+.main-container {
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+}

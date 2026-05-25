@@ -1,0 +1,47 @@
+<!--
+ * Title: about.component.html
+ * Author: Brock Hemsouvanh and Professor Richard Krasso
+ * Date: 4/20/2024
+ * Description: HTML template for the About component of the In-N-Out Books application.
+ *              This template uses Angular Flex Layout to arrange content in a responsive design.
+-->
+
+<!-- The main container with row wrap layout for responsive behavior -->
+<div fxLayout="row wrap">
+
+  <!-- Flexible box to contain author information and biography -->
+  <div fxFlex>
+
+    <!-- Vertical layout for image and a brief caption -->
+    <div fxLayout="column">
+      <div>
+        <img src="./assets/robert-bakker.jpg" alt="Robert T. Bakker" />
+      </div>
+
+      <div>
+        <em>
+          Robert T. Bakker
+        </em>
+      </div>
+    </div>
+
+    <!-- Flexible box for the author's title and additional information -->
+    <div fxFlex>
+      <h1 class="blue">Robert T. Bakker</h1>
+      <p>
+        Robert T. Bakker is a prominent figure in paleontology, known for his dynamic approach and pioneering theories.
+        Educated at Yale and Harvard, Bakker was instrumental in challenging and changing the perception of dinosaurs from
+        sluggish, cold-blooded creatures to warm-blooded, intelligent beings. His charismatic teaching
+        methods and the publication of "Dinosaur Heresies" have popularized these once controversial ideas. Bakker's contributions
+        extend beyond academia into public education, where he engages audiences with vivid narratives about prehistoric life,
+        further enhancing public understanding and appreciation of paleontology.
+
+Reference:
+
+Prehistoric Planet. (n.d.). <i>Robert T. Bakker: Legend of Paleontology.</i> Retrieved from https://www.prehistoricplanet.com/features/index.php?id=26
+      </p>
+      <em>Bio by: Brock Hemsouvanh. <a href="https://www.prehistoricplanet.com/features/index.php?id=26" target="_blank">Source</a>
+      </em>
+    </div>
+  </div>
+</div>

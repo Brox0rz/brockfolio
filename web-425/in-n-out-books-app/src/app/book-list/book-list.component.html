@@ -1,0 +1,37 @@
+<!-- Title: book-list.component.html
+Authors: Professor Richard Krasso and Brock Hemsouvanh
+Date: 4/21/2024
+Modified: 05/08/2024
+Description: Book List component template for displaying a table of books. -->
+
+<div fxLayout="column wrap">
+  <!-- Show spinner when books array is empty -->
+  <ng-container *ngIf="books.length === 0">
+    <mat-spinner></mat-spinner>
+  </ng-container>
+
+  <!-- Displays favorite books count -->
+  <div *ngIf="books.length > 0">
+    <h2 style="color: green;">Top {{ books.length }} Favorite Books</h2>
+
+    <div style="display: grid; grid-gap: 20px; grid-template-columns: auto auto auto; padding: 25px;" class="grid-container">
+      <!-- Looping over the books array -->
+      <ng-container *ngFor="let book of books">
+        <!-- Creating mat-card for each book -->
+        <mat-card style="padding: 20px; font-size: 30px;" class="grid-container__item">
+          <mat-card-title>
+            <a style="text-decoration: none; cursor: pointer;" (click)="showBookDetails(book.isbn)">{{ book.title }}</a>
+          </mat-card-title>
+          <mat-card-content>
+            <mat-list>
+              <!-- Mapping ISBN, Pages, and Authors to mat-list-items -->
+              <mat-list-item>ISBN: {{ book.isbn }}</mat-list-item>
+              <mat-list-item>Pages: {{ book.numOfPages }}</mat-list-item>
+              <mat-list-item>Authors: {{ book.authors.join(', ') }}</mat-list-item>
+            </mat-list>
+          </mat-card-content>
+        </mat-card>
+      </ng-container>
+    </div>
+  </div>
+</div>

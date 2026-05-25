@@ -1,0 +1,23 @@
+<!--
+  File: not-found.component.html
+  Author: Professor Richard Krasso
+  Description: HTML template for displaying a custom 404 Not Found page. This template uses Angular Material components
+                to create a visually appealing layout that informs users they have navigated to a non-existent page within the application.
+  Created: 4/26/2024
+  Modified by: Brock Hemsouvanh on 4/26/2024
+-->
+
+<div fxLayout="column">
+
+  <mat-card fxFlex style="margin-top: 10%; width: 50%; margin-left: 18%;" class="mat-elevation-z0">
+
+    <mat-card-title>
+      <img src="./assets/not-found-image.png" alt="Page Not Found" />
+    </mat-card-title>
+
+    <mat-card-content style="text-align: center; padding-left: 30%;">
+      <button mat-raised-button color="accent" routerLink="/">Go Home</button>
+    </mat-card-content>
+
+  </mat-card>
+</div>

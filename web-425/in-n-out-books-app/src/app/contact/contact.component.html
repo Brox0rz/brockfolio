@@ -1,0 +1,65 @@
+<!--
+ * Title: contact.component.html
+ * Author: Brock Hemsouvanh and Professor Richard Krasso
+ * Date: 4/20/2024
+ * Description: HTML template for the Contact component of the In-N-Out Books application.
+ *              This template uses Angular Material components and Angular Flex Layout for layout and styling.
+-->
+
+<!-- Main flex container with row wrap for responsiveness -->
+<div fxLayout="row wrap">
+
+  <!-- Flex item for address information within a material card -->
+  <div fxFlex>
+    <mat-card class="mat-eleveation-z0">
+      <!-- Card title with an icon -->
+      <mat-card-title class="card-title-icon">
+        <mat-icon color="primary">navigation</mat-icon>
+      </mat-card-title>
+
+      <br />
+
+      <!-- Card content for address, styled to center text -->
+      <mat-card-content class="align-center">
+        <p>
+          123 Address Lane
+        </p>
+        <p>That, Place</p>
+        <br />
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- Flex item for contact numbers within a material card -->
+  <div fxFlex>
+    <mat-card class="mat-eleveation-z0">
+      <mat-card-title class="card-title-icon">
+        <mat-icon color="primary">phone</mat-icon>
+      </mat-card-title>
+
+      <br />
+
+      <!-- Card content for phone numbers, styled to center text -->
+      <mat-card-content class="align-center">
+        <p>
+          Direct: 123-123-1234
+        </p>
+        <p>
+          Toll-free: 1-123-1234
+        </p>
+        <p>
+          Fax: 567-567-6789
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<br /><br /><br /><br />
+
+<!-- Footer text centered, contained within a flex layout column -->
+<div fxLayout="column">
+  <p style="text-align: center">
+    Visit us online or at one of our many great locations throughout the Universe!
+  </p>
+</div>
